@@ -1,0 +1,225 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(183, 181, 181);
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #ec4747;
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgb(183, 181, 181);
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #c75148;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #ff4040;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ff4040;
+    color: black;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    color: white;
+}
+
+.image-section img {
+    width: 100%;
+    max-height: 650px;
+    height: auto;
+}
+
+.image-section .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translateY(-20%);
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.image-section .overlay-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.image-section .overlay-text p {
+    margin: 10px 0;
+}
+
+.image-section .overlay-text .shop-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-section .overlay-text .shop-button:hover {
+    background-color: #ff0000;
+}
+
+.new-arrivals-section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 100%; /* Adjust the max-width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for a more professional look */
+    border-radius: 0; /* Optional: add border radius for smooth edges */
+}
+
+.new-arrivals-section h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.new-arrivals-section h2::after {
+    content: '';
+    display: block;
+    width: 50px; /* Adjust the width of the underline */
+    height: 3px; /* Adjust the height of the underline */
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.bar {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.bar ul {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    
+}
+.bar li {
+    display: inline;
+    
+}
+.bar a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    margin: 2%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bar a:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+}
+
+.books-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+}
+.book-item {
+    width: 23.6%;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+.book-item img {
+    width: 100%;
+    height: 75%;
+    border-radius: 0px;
+    
+}
+.book-description {
+    margin-top: 10px;
+    text-align: left;
+}
+.book-description p {
+    margin: 0px 0;
+}
